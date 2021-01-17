@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(253, 248, 242);
+}
+h1 , h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+}
+
+pre {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}

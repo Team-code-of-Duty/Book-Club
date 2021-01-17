@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: 'kumbh sans', sans-serif ;
+ 
+ }
+
+
+
+.container_two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 90%;
+    padding: 0;
+    z-index: 0;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    background-color: #e9e1e5;
+
+}
+.contant h1 {
+    font-size:40px;
+    background-image: linear-gradient(to top ,#000000 3% , #df314e 100% );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color :transparent;
+   
+} 
+.contant h2 {
+    font-size:20px;
+    background-image: linear-gradient(to top ,#000000 3% , #df314e 100% );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color :transparent;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 20px;
+    }
+
+    .imag-contaner {
+        text-align: center;
+    }
+    
+    .mainImage {
+        height: 50%;
+        width: 50%;
+        margin-top: 30px;
+    }
+
+
+
+.container-first {
+
+    margin-top: 30px ;
+    margin-left: 100px;
+    height: 90%;
+    width: 100%;
+    max-width: 1300px;
+    padding: 50px 50px;
+    background-color: #e9e1e5;
+
+}
+.contant-artical h1 {
+    margin-top: 10px;
+    background-image: linear-gradient(to top ,#000000 3% , #df314e 100% );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color :transparent;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 30px;
+    
+    
+}
+.contant-artical pre {
+    margin-left: 30px;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+
+
+body {
+    background-color: #e9e1e5;
+}
+
+.contant-artical h2 {
+    margin-top: 40px;
+    background-image: linear-gradient(to top ,#000000 3% , #df314e 100% );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color :transparent;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 25px;
+    
+}
+
+
+
+.contant-artical li {
+    margin-left: 95px;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+
+
+.idea {
+    margin-top: 30px;
+    
+
+
+}
+.idea pre {
+    margin-left: 30px;
+    margin-top: 7px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 17px;
+} 
+
+
+.idea h1 {
+    background-image: linear-gradient(to top ,#000000 3% , #df314e 100% );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color :transparent;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 25px;
+    
+}
+
+.outer {
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    background-color: rgb(255, 255, 246);
+    color: rgb(0, 0, 0);
+}
+
+
+
