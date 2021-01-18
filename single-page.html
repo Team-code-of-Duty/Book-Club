@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book</title>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        .checked {
+            color: orange;
+        }
+
+   
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .parent{
+            display: flex;
+        }
+    
+        .parent-container {
+            width: 80%;
+            
+        
+        }
+        .parent-container .details-container .img{
+            border: 2px solid #000;
+        }
+
+        .parent-container2 {
+
+            width: 20%;
+          
+       
+        }
+        .book-rating {
+            margin: 100px 20px 60px 60px;
+        }
+        .book-form{
+            margin: 50px 20px 10px 20px;
+        }
+
+        .book-form input[type=text] {
+            width: 100%;
+            padding: 8px 10;
+            margin: 12px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .description-container .download{
+            background-color: darkred;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        .description-container .download:hover{
+            border: 2px solid darkred;
+            color: darkred;
+            background-color: #fff;
+        }
+        .description-container p{
+            margin: 20px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+    <div class="parent">
+
+
+        <main class="parent-container">
+
+
+
+            <div class="details-container" >
+           
+                    <img class="img"
+                    src="https://media-exp1.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2159024400&v=beta&t=CrP5Le1mWICRcaxIGNBuajHcHGFPuyNA5C8DI339lSk">
+                
+                <br>
+                <p><b> book title: </b></p>
+                <p><b> book name: </b></p>
+                <p><b> book rating: </b></p>
+                
+
+            </div>
+            <hr>
+
+            <div class="description-container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, iusto quia. Soluta perferendis,
+                    voluptates expedita illo quidem quo, odio non vero dolorum, molestias qui accusantium mollitia
+                    officia id. Optio, similique.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laborum repellat totam dicta, ipsa a
+                    quam quibusdam error odio beatae maiores expedita perferendis sit? Molestiae eos enim optio
+                    assumenda eaque?
+
+                </p>
+
+                <a class="download" href="" download="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg"> Download</a>
+            </div>
+
+
+        </main>
+
+        <div class="parent-container2">
+            <div class="book-rating">
+
+                <h2>Star Rating</h2>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+            </div>
+
+            <hr>
+            <div class="book-form">
+                <form id="book-comment">
+                    <fieldset>
+                        <legend>shaer your experiance</legend>
+                        <div id="comment">
+    
+                        </div>
+                        <label>coment</label>
+    
+                        <input id="comment" name="comment" type="text">
+                        <input type="submit" value="Comment">
+                    </fieldset>
+                </form>
+               
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+
+<div>
+
+</div>
