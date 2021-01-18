@@ -20,3 +20,6 @@
 
 ### Discription :
 - Our Website is related to book reviews and collecting feedback from the users and show their submissions  and reviews for others to see and  help them choose the best  book for the language they want to learn.
+
+
+Domain Modeling : ![Digram of the project work](https://github.com/Team-code-of-Duty/Book-Club/blob/main/20210118_223328.jpg)
