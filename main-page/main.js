@@ -35,3 +35,26 @@ function showSlides(n) {
     /* Making an element block: */
     slides[slideIndex - 1].style.display = "block";    
 }
+
+
+
+var arrayOfResult = [];
+
+if (localStorage.length > 0 ) {
+    arrayOfResult = JSON.parse(localStorage.getItem('feedbacks'))
+    console.log(arrayOfResult)
+}
+
+
+var pa = document.getElementById('qOne');
+pa.textContent = arrayOfResult[0].question ;
+var pa = document.getElementById('qTwo');
+pa.textContent = arrayOfResult[0].question ;
+var pa = document.getElementById('qThree');
+pa.textContent = arrayOfResult[0].question ;
+var pa = document.getElementById('qFour');
+pa.textContent = arrayOfResult[0].question ;
+var pa = document.getElementById('qFive');
+pa.textContent = arrayOfResult[0].question ;
+var pa = document.getElementById('qSix');
+pa.textContent = arrayOfResult[0].question ;
