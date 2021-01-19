@@ -174,7 +174,7 @@ new Book("business",
 
 /**/ 
 var root =document.getElementById("section-one");
-root.className+="section-one";
+root.className="section-one";
 
 
 for(var i=0;i<books.length;i++){
@@ -183,23 +183,20 @@ for(var i=0;i<books.length;i++){
 
 function render(index){
 var div =document.createElement("div");
-div.className+="img1-s1";
+div.className="img1-s1";
 var bookImg=document.createElement("img");
 var innerDiv=document.createElement("div");
 var firstParagraph=document.createElement("p");
-firstParagraph.className+="book-title";
+firstParagraph.className="book-title";
 var br=document.createElement("br");
-var seconedParagraph=document.createElement("p");
 
 bookImg.src=books[index].img;
 firstParagraph.textContent=books[index].title;
-seconedParagraph.textContent=books[index].description;
 
 div.appendChild(bookImg);
 innerDiv.appendChild(firstParagraph);
 innerDiv.appendChild(br);
 innerDiv.appendChild(br);
-innerDiv.appendChild(seconedParagraph);
 div.appendChild(innerDiv);
 //console.log("hello")
 root.appendChild(div);
