@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+
+.aside {
+
+    width: 10%;
+}
+
+.aside h1 {
+    margin-top: 50%;
+}
+
+.aside ul {
+    margin-bottom: 50%;
+    list-style-type: none;
+    padding: 5px;
+
+
+
+
+}
+
+.aside ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.aside ul li a:hover {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    width: 90%;
+    border: 1px solid black;
+
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+    display: flex;
+}
+
+.img-one,
+.img1-s1,
+.img2-s1,
+.img3-s1,
+.img1-s2,
+.img2-s2,
+.img3-s2,
+.img1-s3,
+.img2-s3,
+.img3-s3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.title h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.checked {
+    color: orange;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.parent{
+    display: flex;
+    margin-top:49px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.parent-container {
+    width: 60%;
+    
+
+}
+.details-container{
+position: relative;
+
+
+}
+.book-info li {
+
+    list-style: none;
+}
+
+.book-info{
+position: absolute;
+top: 20px;
+left:223px;
+}
+
+ 
+.parent-container .details-container .img{
+    border: 2px solid #000;
+}
+.comment{
+
+    width: 50px;
+}
+legend{
+
+    color:white;
+}
+.parent-container2 {
+background-color: black;
+opacity: .8;
+    width: 40%;
+  
+
+}
+.book-rating {
+
+margin-left:5px;
+
+}
+.book-form{
+    margin: 50px 20px 10px 20px;
+}
+
+.book-form input[type=text] {
+    width: 62%;
+    
+    padding: 8px 10;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.description-container .download{
+    background-color: darkred;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+.description-container .download:hover{
+    border: 2px solid darkred;
+    color: darkred;
+    background-color: #fff;
+}
+.description-container p{
+    margin: 2px;
+}
+.infoItems{
+    padding: 6px;
+}
+
+
+
+    a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    }
+
+    header{
+    display: flex;
+    vertical-align: middle;
+    position: relative;
+    background-color: black;
+    opacity: .9;
+    }
+
+    header .logo {
+    display:inline-block;
+    margin-right: 150px;
+    }
+    
+    .main-nav{
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 409px;
+    }
+    .list-item{
+    margin-right: 70PX;
+    display: inline;
+    }
+    .rightSearc{
+    display: inline-block;
+    }
+    .search{
+    display: inline;
+    position:absolute;
+    top: 20px;
+    left: 850px;
+    }
+    .input-search{
+    width:300px;
+    }
+    .link-item{
+    font-size: 22px;
+    font-weight: bolder;
+    font-family:"penna";
+    color: white;
+    text-decoration: none;
+    }
+    /*-------------------------------------------------------*/
+    
+    .social-Media-Contaier .fa {
+    padding: 5px;
+    font-size: 15px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    text-decoration: none;
+    }
+    /* Add a hover effect if you want */
+    .social-Media-Contaier .fa:hover {
+    opacity: 0.7;
+    }
+    /* Set a specific color for each brand */
+    /* Facebook */
+    .social-Media-Contaier .fa-facebook {
+    background: #3B5998;
+    color: white;
+    }
+    /* Twitter */
+    .social-Media-Contaier .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    }
+    .social-Media-Contaier .fa-instagram {
+    background: #125688;
+    color: white;
+    }
+    .Sm-icon{
+    display: inline;
+    list-style: none;
+    }
+    .contactUs-container{
+    float:left;
+    display: inline-block;
+    }
+    .contactUs-container > *{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    }
+    .social-Media-Contaier{
+    margin-left:9px;
+    margin-top: 7px;
+  
+    }
+    .footer{
+    display: flex;
+    background-color: black;
+    }
+    .main-footer{
+    margin-left: 290px;
+    }
+    .main-footer > * {
+    margin-right: 60px;
+    display:inline-block;
+    }
+    .link-meet-team{
+    text-decoration: none;
+    margin-left:-3px;
+    }
+    .contact-info{
+    font-size: 15px;
+    font-weight: normal;
+    }
+    .footer a, h4 {
+    font-size: 20px;
+    color:white;
+    margin-top: -5px;
+    }
+    .contact-info {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    }
+    .footer {
+    font-family: "penna";
+    opacity: .9;
+    width: 100%; 
+    margin-top: 28px;
+    }
+    h1{
+        font-size: 20px;
+    color:white}
+        h1 > *{font-size: 15px;
+    }
+    body{color: white;
+        font-family: "Tiempos";
+            background-image: url(https://wallpaperaccess.com/full/3876048.jpg);}
+            .contact-h1{
+                margin-bottom: 17px;
+            }
+
+            .main-footer ,.Terms-pollicies{
+                margin-top: 10px;
+            }
+            label, legend{
+                margin-left: 8px;
+            }
+            #name{
+                width: 200px;
+                margin-left: 2px;
+            }
+            .recaent-coment{
+                margin-left: 8px;
+                margin-top: 5px;
+            }
+
+         .firstHr{
+             width: 670px;
+         }
