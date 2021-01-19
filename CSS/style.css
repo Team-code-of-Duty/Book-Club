@@ -3,43 +3,38 @@ margin:0;
 padding: 0;
 box-sizing: border-box;
 }
-body{
-color: white;
-font-family: "Tiempos";    
-background-image: url(https://wallpaperaccess.com/full/3876048.jpg);
-}
+
+
+
 a{
 text-decoration: none;
 color: white;
 font-size: 15px;
 }
-header{
+/*header{
 display: flex;
 vertical-align: middle;
 position: relative;
 background-color: black;
 opacity: .9;
 }
-header .logo{
+/*header .logo{
 display:inline-block;
 margin-right: 150px;
-}
-h1{
+}*/
 
-font-size: 20px;
-}
 h1 > *{
 font-size: 15px;
 
 }
 
-.main-nav{
+/*.main-nav{
 display: inline-block;
 position: absolute;
 top: 14px;
 left: 409px;
 
-}
+}*/
 .list-item{
 margin-right: 70PX;
 display: inline;
@@ -71,13 +66,13 @@ color: white;
 text-decoration: none;
 
 }
-.slider{
+/*.slider{
 width: 500px;
 height: 300px;
 margin-left:370px ;
 margin-bottom: 50px;
 }
-
+*/
 .img-feedback{
 
 width: 1000px;
@@ -222,9 +217,10 @@ opacity: 1
 
 height: 480px;
 margin-top: 35px;
-} .footer {
+} 
+/*.footer {
 font-family: "penna";
 opacity: .9;
 width: 100%;
 
-}
+}*/
