@@ -173,6 +173,7 @@ new Book("business",
 
 
 /**/ 
+
 var sec1 =document.getElementById("section-one");
 var sec2 =document.getElementById("section-tow");
 sec1.className="section-one";
@@ -209,8 +210,10 @@ function renderImage(index){
 
 var div =document.createElement("div");
 div.className="img1-s1";
+
 var bookImg=document.createElement("img");
 var innerDiv=document.createElement("div");
+innerDiv.className="bookName";
 var firstParagraph=document.createElement("p");
 firstParagraph.className="book-title";
 var br=document.createElement("br");
@@ -224,7 +227,7 @@ innerDiv.appendChild(br);
 innerDiv.appendChild(br);
 div.appendChild(innerDiv);
 
-sec2.appendChild(div);
+sec1.appendChild(div);
 
 }
 
