@@ -1,0 +1,100 @@
+* {
+margin:0;
+padding: 0;
+box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.aside {
+width: 20%;
+
+}
+
+.aside h1 {
+padding: 8px;
+padding-bottom:2px;
+color: black;
+}
+
+.aside ul {
+padding: 8px;
+color: black;
+list-style-type: none;
+
+}
+.aside ul li  {
+padding-bottom: 10px;
+
+}
+
+.aside ul li a {
+padding-bottom: 10px;
+text-decoration: none;
+color: black;
+font-size: 20px;
+}
+
+.aside ul li a:hover {
+font-size: 30px;
+}
+
+.container {
+display: flex;
+background-image: url(https://img.freepik.com/free-photo/grunge-old-vintage-retro-paper-texture-background_47840-948.jpg?size=626&ext=jpg);
+width: 70%;
+margin: auto;
+margin-top: 50px;
+padding-bottom: 16px;
+}
+
+.main {
+width: 90%;
+margin: auto;
+color: black;
+}
+
+.section-one,
+.section-four {
+padding: 8px;
+}
+
+.img-one,
+.img1-s1{
+display: block;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+.section-one .img1-s1 img{
+float: left;
+width: 300px;
+height: 400px;
+}
+.section-one .img1-s1 .book-title{
+color: blue;
+font-size: xx-large;
+display: inline;
+}
+.section-one .img1-s1 div{
+float: left;
+display: inline;
+padding-left: 8px;
+}
+
+.title h1 {
+
+text-align: center;
+text-decoration: underline;
+
+}
+
+.checked {
+color: orange;
+}
+
+
+
+
+
+/*-------------------------------------------------------*/
+
+

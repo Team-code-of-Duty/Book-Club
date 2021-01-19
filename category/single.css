@@ -1,0 +1,117 @@
+.checked {
+color: orange;
+}
+
+
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.parent{
+display: flex;
+margin-top:49px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.parent-container {
+width: 60%;
+
+
+}
+.details-container{
+position: relative;
+
+
+}
+.book-info li {
+
+list-style: none;
+}
+
+.book-info{
+position: absolute;
+top: 20px;
+left:223px;
+}
+
+
+.parent-container .details-container .img{
+border: 2px solid #000;
+}
+.comment{
+
+width: 50px;
+}
+legend{
+
+color:white;
+}
+.parent-container2 {
+background-color: black;
+opacity: .8;
+width: 40%;
+
+
+}
+.book-rating {
+
+margin-left:5px;
+
+}
+.book-form{
+margin: 50px 20px 10px 20px;
+}
+
+.book-form input[type=text] {
+width: 62%;
+
+padding: 8px 10;
+margin: 12px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+.description-container .download{
+background-color: darkred;
+padding: 10px;
+margin-top: 20px;
+text-decoration: none;
+color: white;
+}
+.description-container .download:hover{
+border: 2px solid darkred;
+color: darkred;
+background-color: #fff;
+}
+.description-container p{
+margin: 2px;
+}
+.infoItems{
+padding: 6px;
+}
+
+
+
+
+/*-------------------------------------------------------*/
+label, legend{
+margin-left: 8px;
+}
+#name{
+width: 200px;
+margin-left: 2px;
+}
+.recaent-coment{
+margin-left: 8px;
+margin-top: 5px;
+}
+
+.firstHr{
+width: 670px;
+}
+
+
