@@ -173,15 +173,40 @@ new Book("business",
 
 
 /**/ 
-var root =document.getElementById("section-one");
-root.className="section-one";
+var sec1 =document.getElementById("section-one");
+var sec2 =document.getElementById("section-tow");
+sec1.className="section-one";
+sec2.className="section-one";
 
+var a1=document.getElementById("programming");
+var a2=document.getElementById("literature");
+var a3=document.getElementById("business");
 
-for(var i=0;i<books.length;i++){
-    render(i);
+a1.addEventListener("click",programmingLinkHandler);
+function programmingLinkHandler(){
+    console.log("claosjcosaomfcl");
+    render(0);
 }
+a2.addEventListener("click",literatureLinkHandler);
+function literatureLinkHandler(){
+    console.log("claosjcosaomfcl");
+    render(6); 
+}
+a3.addEventListener("click",businessLinkHandler);
+function businessLinkHandler(){
+    console.log("claosjcosaomfcl");
+    render(12);
+}    
+function render(section){
+    sec1.innerHTML="";
+    sec2.innerHTML="";
 
-function render(index){
+for(var i=section;i<(section+6);i++){
+    renderImage(i);
+}
+}
+function renderImage(index){
+
 var div =document.createElement("div");
 div.className="img1-s1";
 var bookImg=document.createElement("img");
@@ -198,8 +223,10 @@ innerDiv.appendChild(firstParagraph);
 innerDiv.appendChild(br);
 innerDiv.appendChild(br);
 div.appendChild(innerDiv);
-//console.log("hello")
-root.appendChild(div);
+
+sec2.appendChild(div);
 
 }
+
+
 
