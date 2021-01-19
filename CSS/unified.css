@@ -1,0 +1,187 @@
+/*this sheet will contain all of nav and footer selector in all pages*/
+
+
+
+
+
+/*******************************************************************
+*
+******************body selector**********************************
+*
+******************************************************************/
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    } 
+
+body{
+color: white;
+font-family: "Tiempos";
+background-image: url(https://wallpaperaccess.com/full/3876048.jpg);
+background-repeat: no-repeat;
+background-size: cover ;
+}
+/* background: url(https://wallpaperaccess.com/full/3876048.jpg) 0 0 no-repeat / cover; */
+    
+
+
+
+.main-footer ,.Terms-pollicies{
+margin-top: 15px;
+}
+/*******************************************************************
+*
+******************nav selector**********************************
+*
+******************************************************************/
+a{
+text-decoration: none;
+color: white;
+font-size: 15px;
+}
+
+header{
+display: flex;
+vertical-align: middle;
+position: relative;
+background-color: black;
+opacity: .9;
+}
+
+header .logo {
+display:inline-block;
+margin-right: 150px;
+}
+
+.main-nav{
+display: inline-block;
+position: absolute;
+top: 14px;
+left: 409px;
+}
+.list-item{
+margin-right: 70PX;
+display: inline;
+}
+.rightSearc{
+display: inline-block;
+}
+.search{
+display: inline;
+position:absolute;
+top: 20px;
+left: 850px;
+}
+.input-search{
+width:300px;
+}
+.link-item{
+font-size: 22px;
+font-weight: bolder;
+font-family:"penna";
+color: white;
+text-decoration: none;
+}
+/*******************************************************************
+*
+******************footer selector**********************************
+*
+******************************************************************/
+/*.main-footer ,.Terms-pollicies{
+margin-top: 10px;
+}*/
+.social-Media-Contaier .fa {
+padding: 5px;
+font-size: 15px;
+width: 22px;
+height: 22px;
+text-align: center;
+text-decoration: none;
+}
+/* Add a hover effect if you want */
+.social-Media-Contaier .fa:hover {
+opacity: 0.7;
+}
+/* Set a specific color for each brand */
+/* Facebook */
+.social-Media-Contaier .fa-facebook {
+background: #3B5998;
+color: white;
+}
+/* Twitter */
+.social-Media-Contaier .fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.social-Media-Contaier .fa-instagram {
+background: #125688;
+color: white;
+}
+.Sm-icon{
+display: inline;
+list-style: none;
+}
+.contactUs-container{
+float:left;
+}
+.contactUs-container > *{
+margin-bottom: 10px;
+margin-left: 10px;
+}
+.social-Media-Contaier{
+margin-left:9px;
+margin-top: 7px;
+
+}
+
+.main-footer{   
+margin-left:300px ;
+}
+.main-footer > * {
+margin-right: 60px;
+font-size: 17px;
+display:inline-block;
+}
+.link-meet-team{
+text-decoration: none;
+margin-left:-3px;
+}
+.contact-info{
+font-size: 15px;
+font-weight: normal;
+}
+.footer a, h4 {
+font-size: 20px;
+color:white;
+margin-top: -5px;
+}
+.contact-info {
+font-size: 20px;
+margin-top: 10px;
+margin-bottom: 2px;
+}
+.footer {
+width: 100%;
+margin: auto;
+font-family: "penna";
+ height:132px;
+margin-top: -13px;
+display: flex;
+background-color: black;
+bottom: 0;
+opacity: .7;
+-webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+-moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+
+
+}
+h1{
+font-size: 20px;
+color:white
+}
+h1 > *{font-size: 15px;
+}
