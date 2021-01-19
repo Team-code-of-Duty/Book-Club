@@ -19,15 +19,15 @@
 
 body{
 color: white;
-/* font-family: "Tiempos";
+font-family: "Tiempos";
 background-image: url(https://wallpaperaccess.com/full/3876048.jpg);
 background-repeat: no-repeat;
 background-size: cover ;
-height:auto; */
-background: url(https://wallpaperaccess.com/full/3876048.jpg) 0 0 no-repeat / cover;
+}
+/* background: url(https://wallpaperaccess.com/full/3876048.jpg) 0 0 no-repeat / cover; */
     
 
-}
+
 
 .main-footer ,.Terms-pollicies{
 margin-top: 15px;
