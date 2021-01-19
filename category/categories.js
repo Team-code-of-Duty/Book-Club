@@ -181,6 +181,7 @@ function saveObjects(books) {
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -203,8 +204,44 @@ bookImg.addEventListener('click', function(event){
 
 
 });
-}
+=======
+/**/ 
+var sec1 =document.getElementById("section-one");
+var sec2 =document.getElementById("section-tow");
+sec1.className="section-one";
+sec2.className="section-one";
 
+var a1=document.getElementById("programming");
+var a2=document.getElementById("literature");
+var a3=document.getElementById("business");
+
+a1.addEventListener("click",programmingLinkHandler);
+function programmingLinkHandler(){
+    console.log("claosjcosaomfcl");
+    render(0);
+}
+a2.addEventListener("click",literatureLinkHandler);
+function literatureLinkHandler(){
+    console.log("claosjcosaomfcl");
+    render(6); 
+}
+a3.addEventListener("click",businessLinkHandler);
+function businessLinkHandler(){
+    console.log("claosjcosaomfcl");
+    render(12);
+}    
+function render(section){
+    sec1.innerHTML="";
+    sec2.innerHTML="";
+
+for(var i=section;i<(section+6);i++){
+    renderImage(i);
+>>>>>>> c3f74b611bd05ca5143f456c22077dd1b0e3a924
+}
+}
+function renderImage(index){
+
+<<<<<<< HEAD
 function render(index) {
     var div = document.createElement("div");
     div.className += "img1-s1";
@@ -234,10 +271,31 @@ function render(index) {
     div.appendChild(innerDiv);
     //console.log("hello")
     root.appendChild(div);
+=======
+var div =document.createElement("div");
+div.className="img1-s1";
+var bookImg=document.createElement("img");
+var innerDiv=document.createElement("div");
+var firstParagraph=document.createElement("p");
+firstParagraph.className="book-title";
+var br=document.createElement("br");
+
+bookImg.src=books[index].img;
+firstParagraph.textContent=books[index].title;
+
+div.appendChild(bookImg);
+innerDiv.appendChild(firstParagraph);
+innerDiv.appendChild(br);
+innerDiv.appendChild(br);
+div.appendChild(innerDiv);
+
+sec2.appendChild(div);
+>>>>>>> c3f74b611bd05ca5143f456c22077dd1b0e3a924
 
 }
 
 
+<<<<<<< HEAD
 // var bookImg = document.getElementById("bookImage");
 
 // bookImg.addEventListener('click', function(event){
@@ -250,4 +308,6 @@ function render(index) {
 
 
 // });
+=======
+>>>>>>> c3f74b611bd05ca5143f456c22077dd1b0e3a924
 
