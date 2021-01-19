@@ -37,6 +37,7 @@ function showSlides(n) {
 }
 
 var arrayOfResult = [];
+// retiving items stored in local-storage then accessing each question element.
 
 
 if (localStorage.length > 0 ) {
@@ -48,12 +49,17 @@ var pa3 = document.getElementById('qThree');
 var pa4 = document.getElementById('qFour');
 var pa5 = document.getElementById('qFive');
 var pa6 = document.getElementById('qSix');
+// creating an empty array
 
 var randomIndexes=[]
+//this loop increments the index number
+
 for(var i=0;i<arrayOfResult.length;i++){
     randomIndexes[i]=i;
 }
+
 shuffleArray(randomIndexes)
+// this renders the values of the array which they indicates the  value (answers) of the questions
 
 pa1.textContent = arrayOfResult[randomIndexes[0]].question;
 pa2.textContent = arrayOfResult[randomIndexes[1]].question;
