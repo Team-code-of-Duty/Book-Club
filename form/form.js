@@ -31,6 +31,7 @@ function  Feedback  (firstName, lastName, email, question) {
   form.addEventListener('submit', formHandler);
   function formHandler(event) {
       event.preventDefault();
+
       //  variables below targets the values that have been inputed into from the html
   // (a link through the html form and the java scripts)
 
@@ -43,7 +44,8 @@ function  Feedback  (firstName, lastName, email, question) {
 
 new Feedback (firstName , lastName ,email ,question);
 savingData();
-  }
+window.location.replace("http://127.0.0.1:5502/index.html"); }
+  
 
 
 // create a local storge for one Question
