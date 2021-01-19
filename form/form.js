@@ -24,19 +24,10 @@ new Feedback (firstName , lastName ,email ,question);
 savingData();
   }
 
-  
 
 // create a local storge for one Question
 function savingData() {
 
     localStorage.setItem('feedbacks', JSON.stringify(feedbackArray));
 
-}
-
-function checkAndRestore() {
-
-    if (localStorage.length > 0) {
-        feedbackArray = JSON.parse(localStorage.getItem('feedbacks'));
-        console.log(feedbackArray);
-    }
 }
