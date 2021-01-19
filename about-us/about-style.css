@@ -1,0 +1,110 @@
+body{
+  color: white;
+  background-image: url(https://wallpaperaccess.com/full/3876048.jpg);
+  background-repeat: no-repeat;
+}
+.title{
+  display: block;
+  text-align: center;
+  
+  width: 100%;
+}
+ /* h1,h2{
+   display: block;
+   text-align: center;
+ } */
+
+ .Our-goal{
+   background-image: url(book.png);
+   background-repeat: no-repeat;
+width: 756px;
+height: 329px;
+margin: auto;
+margin-top: 70px;
+opacity: .8;
+vertical-align: middle;
+
+ }
+ .our-vision{
+  float: right;
+  margin-top: -130px;
+  width: 329px;
+  
+ }
+.our-mission{
+  display: inline-block;
+  margin-left: 87px;
+  margin-top: 61px;
+  width: 378px;
+  height: 130px;;
+}
+p{
+  font-family: "Tiempos";
+  color: #a20a0a;
+}
+.Our-goal h2{
+  color: #a20a0a
+
+  ;
+}
+p{
+ font-size: 18px;
+}
+
+ .image {
+    opacity: 1;
+    transition: transform .2s;
+    border-radius: 50%;
+ width: 70px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+        
+        transition: transform .2s;
+      
+        margin: 0 auto;  
+     
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .containe:hover .image {
+    
+    transform: scale(1.5)
+  }
+  
+  .containe:hover .middle {
+    opacity: 1;
+    margin-top: 20px;
+  }
+  
+  .text {
+    background-color: #e3fce3;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 16px 20px;
+    margin-top: 650px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .our-pic {
+      display: flex;
+      margin-top: 40px;
+      margin-left: 500px;
+  }
+
+.meet-us{
+  font-family: "Tiempos";
+  color:#ffffff;
+font-size: xx-large;
+text-align: center;
+}
