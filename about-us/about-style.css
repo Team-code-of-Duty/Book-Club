@@ -2,11 +2,12 @@ body{
   color: white;
   background-image: url(https://wallpaperaccess.com/full/3876048.jpg);
   background-repeat: no-repeat;
+ 
 }
 .title{
   display: block;
   text-align: center;
-  
+  margin-top: 50px;
   width: 100%;
 }
  /* h1,h2{
@@ -14,6 +15,16 @@ body{
    text-align: center;
  } */
 
+ .title h1 {
+/* text-shadow: 2px 2px .5px #a20a0a ; */
+font-size: 60px;
+/* background:linear-gradient(white,#a20a0a); */
+
+color:white;
+/* -webkit-text-fill-color: transparent;
+-webkit-background-clip:text ; */
+
+ }
  .Our-goal{
    background-image: url(book.png);
    background-repeat: no-repeat;
@@ -21,7 +32,7 @@ width: 756px;
 height: 329px;
 margin: auto;
 margin-top: 70px;
-opacity: .8;
+
 vertical-align: middle;
 
  }
@@ -69,12 +80,18 @@ p{
   .middle {
     transition: .5s ease;
     opacity: 0;
+    height:50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    margin-bottom: 50px;
+  }
+  .containe{
+margin-right: 10px;
+transform: scale(1.5)
   }
   
   .containe:hover .image {
@@ -82,29 +99,47 @@ p{
     transform: scale(1.5)
   }
   
-  .containe:hover .middle {
+  /*.containe:hover .middle {
     opacity: 1;
     margin-top: 20px;
-  }
+  }*/
   
   .text {
     background-color: #e3fce3;
     color: rgb(0, 0, 0);
     font-size: 16px;
     padding: 16px 20px;
-    margin-top: 650px;
+  
     font-family: "Lucida Console", "Courier New", monospace;
   }
 
   .our-pic {
       display: flex;
-      margin-top: 40px;
-      margin-left: 500px;
+      margin-left: 350px;
+      margin-bottom: 55px;
   }
-
+  .team-des {
+    
+    margin-top:25px;
+    margin-bottom: 20px;
+    color: white;
+    width: 500px;
+text-align: center;
+margin-left: 375px;
+margin-bottom: 100px;
+  }
+  .team-des p{
+    color: white;
+    
+  }
 .meet-us{
   font-family: "Tiempos";
   color:#ffffff;
-font-size: xx-large;
+font-size: 45px;
 text-align: center;
+margin-top: 56px;
+margin-bottom: 76px;
 }
+.motto{
+  font-size:30px;
+color:white}
