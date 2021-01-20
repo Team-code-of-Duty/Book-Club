@@ -292,15 +292,43 @@ function clickHandler(params) {
 }
 
 
-// var bookImg = document.getElementById("bookImage");
+/*Search Code*/ 
 
-// bookImg.addEventListener('click', function(event){
-//     var name = event.target.title;
-//     console.log("book name" + name);
-//     console.log(name);
-//     console.log(event.target.title); 
-//     
-//     window.location.replace("https://www.tutorialrepublic.com/");
+var formSearch=document.getElementById("searchForm");
 
+formSearch.addEventListener("submit",formSearchHandler);
 
-// });
+function formSearchHandler(event) {
+    event.preventDefault();
+    var searchable=event.target.search.value;
+    console.log(searchable);
+    search(searchable);
+}
+function search(searchable){
+    var bookTitles=getBookTitle();//get array of book title located in local storage
+    console.log(bookTitles);
+    for (let index = 0; index < bookTitles.length; index++) {
+        var tiltle=bookTitles[index].toUpperCase();
+        if(searchable.toUpperCase()==tiltle){
+            clickHandler(index);
+            return;
+        } 
+    }
+    swal("No Such Result ", searchable);
+}
+function clickHandler(params) {
+    localStorage.setItem('currentBookIndex', params);
+    window.location.replace("../category/single.html"); 
+}
+function getBookTitle() {
+    var titles=[]
+    if(localStorage.length!=0)
+    if(localStorage.getItem("books")!=null){
+        var temp=JSON.parse(localStorage.getItem("books"));
+        //console.log(temp);
+        for (let index = 0; index < temp.length; index++) {
+            titles.push(temp[index].title);      
+        }//end for
+    }
+    return titles;
+}

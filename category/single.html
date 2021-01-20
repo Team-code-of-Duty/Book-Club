@@ -14,19 +14,22 @@
 
 <body>
     <header> 
-        <img src="../logo.png" alt="" class="logo">
+        <a href="../index.html"><img src="../logo.png" alt="" class="logo"></a>
         <nav class="main-nav">
             <ul class="items-container">
-                <li class="list-item"><a href="" class="link-item">Categories</a></li>
-                <li class="list-item"><a href="" class="link-item">About Us</a></li>
+                <li class="list-item"><a href="../category/categories.html" class="link-item" id="imhere">Categories</a></li>
+                <li class="list-item"><a href="../about-us/about-us.html" class="link-item" id="aboutus" >About Us</a></li>
             </ul>
         </nav>
-        <div id="rightSearc">
-            <form class="search">
-                <input type="text" placeholder="Search.." name="search2" class="input-search">
+
+        <!-- search bar container -->
+        <div id="search-container">
+            <form id="searchForm" class="search">
+                <input type="text" placeholder="Search.." name="search" class="input-search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
+        <!--  end of search bar container -->
     </header>
     <div class="parent">
         <main class="parent-container">
@@ -126,6 +129,7 @@
        
         
     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script src="../category/single.js"></script>
 </body>

@@ -115,4 +115,12 @@ width: 670px;
 margin-top: 16px;
 }
 
+#aboutus:hover {
+    color:rgb(0,79,40);
+    font-weight: bolder;
+}
 
+#imhere:hover{
+    color:rgb(0,79,40);
+    font-weight: bolder;
+}
