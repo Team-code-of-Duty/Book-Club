@@ -143,3 +143,17 @@ margin-bottom: 76px;
 .motto{
   font-size:30px;
 color:white}
+
+#aboutus{
+
+  color:rgb(0,79,40);
+  
+  font-weight: bolder;
+}
+
+#imhere:hover{
+
+  color:rgb(0,79,40);
+  
+font-weight: bolder;
+}

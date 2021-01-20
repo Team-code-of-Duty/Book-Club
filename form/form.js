@@ -42,15 +42,22 @@ function  Feedback  (firstName, lastName, email, question) {
 
     // creating a new object
 
-new Feedback (firstName , lastName ,email ,question);
-savingData();
-window.location.replace("http://127.0.0.1:5502/index.html"); }
-  
+new Feedback (firstName , lastName ,email ,question); 
 
+savingData();
+
+sweet();
+}
+  
 
 // create a local storge for one Question
 function savingData() {
     localStorage.setItem('feedbacks', JSON.stringify(feedbackArray));
 }
-
-
+async function sweet(){
+  await swal("Thank you", "", "success");
+   window.location.replace("http://127.0.0.1:5502/index.html");
+}
+  // swal("Good job!", "You clicked the button!", "success", {
+  //   button: "Aww yiss!",
+  // });
