@@ -3,12 +3,13 @@
 var feedbackArray =[];
 // To check if the local storage works and push the elements newly created to its original place of storage
 
-if (localStorage.length > 0 ) {
+if (localStorage.getItem('feedbacks')!=null ) {
   feedbackArray = getFeedbackArray(JSON.parse(localStorage.getItem('feedbacks')))
 }
 // A temp storage for elements pushed into the array
 
 function getFeedbackArray(array){
+  console.log(array)
   var temp=[]
 for (var index = 0; index < array.length; index++) {
   temp.push(new Feedback(array[index].firstName,array[index].lastName,array[index].email,array[index].question))
@@ -44,7 +45,10 @@ function  Feedback  (firstName, lastName, email, question) {
 
 new Feedback (firstName , lastName ,email ,question);
 savingData();
-window.location.replace("http://127.0.0.1:5502/index.html"); }
+console.log("test");
+window.location.replace("../index.html");
+
+}
   
 
 
