@@ -205,25 +205,35 @@ function saveObjects(books) {
 
 var sec1 =document.getElementById("section-one");
 sec1.className="section-one";
-
+render(0);
 
 var a1=document.getElementById("programming");
+a1.classList.add("par");
 var a2=document.getElementById("literature");
 var a3=document.getElementById("business");
 
 a1.addEventListener("click",programmingLinkHandler);
 function programmingLinkHandler(){
     console.log("claosjcosaomfcl");
+    a1.classList.add("par");
+    a2.classList.remove("par");
+    a3.classList.remove("par");
     render(0);
 }
 a2.addEventListener("click",literatureLinkHandler);
 function literatureLinkHandler(){
     console.log("claosjcosaomfcl");
+    a2.className+="par";
+    a1.classList.remove("par");
+    a3.classList.remove("par");
     render(6); 
 }
 a3.addEventListener("click",businessLinkHandler);
 function businessLinkHandler(){
     console.log("claosjcosaomfcl");
+    a3.className+="par";
+    a1.classList.remove("par");
+    a2.classList.remove("par");
     render(12);
 }    
 function render(section){

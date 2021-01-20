@@ -7,8 +7,9 @@
 // add all the books  one array to one local storage and if that key exists take it from that key so you don't lose the comments ..p.s same as buss mall guys.......
 
 // only make  new boooks if the local storage key that you are using doesn't have the books that you made  ...
-var books=JSON.parse(localStorage.getItem("books"));
-renderBookDetails(localStorage.getItem("currentBookIndex"))//the selected book index 
+var books = JSON.parse(localStorage.getItem("books"));
+var currentBookIndex=localStorage.getItem("currentBookIndex");
+renderBookDetails(currentBookIndex);//the selected book index 
 function renderBookDetails(index) {
     var pageImage = document.getElementById("img1");
     pageImage.src = books[index].img;
@@ -25,18 +26,72 @@ function renderBookDetails(index) {
     var topic = document.getElementById("topics");
     topic.textContent = " Topic :" + books[index].section;
 
-    
+
     var description = document.getElementById("description");
     description.textContent = "Book Description: " + books[index].description;
 
     var downLoad = document.getElementById("down");//a
-    console.log("bk link"+books[index].downLoadLink);
-    downLoad.href=books[index].downLoadLink;
+    console.log("bk link" + books[index].downLoadLink);
+    downLoad.href = books[index].downLoadLink;
 
 
 }
+/** Comment Constructor*/
+var commentsArray = [];
+/** Comment Constructor*/
+function Comment(name, comment,index) {
+    this.name = name;
+    this.comment = comment;
+    this.index=(index);
+    commentsArray.push(this);
+}
+if(localStorage.getItem("comments")!==null){
+    if (localStorage.getItem("comments").length !== 0) {
+        commentsArray = getComments();
+        renderComment();
+        console.log(commentsArray);
+    }
+}
+//renderComment();
+function getComments(){
+     commentsArray=JSON.parse(localStorage.getItem("comments"))  
+}
+var bookComment = document.getElementById("bookComment");
+bookComment.addEventListener("submit", function(event) {
+     event.preventDefault();
+    var commentText = event.target.comment.value;
+    var name=event.target.name.value;
+    var index=currentBookIndex;
+    new Comment(name,commentText,currentBookIndex);
+    saveComments(commentsArray);
+    renderComment();});
+function renderComment() {
+    var commentDiv = document.getElementById("comments");
+    clearComments();
+    for (var i = 0; i < commentsArray.length; i++) {
+        if(commentsArray[i].index==currentBookIndex){
+        var p = document.createElement("p");
+        var line = document.createElement("hr");
+        p.textContent = commentsArray[i].name + " : " + commentsArray[i].comment;
+        commentDiv.appendChild(p);
+        commentDiv.appendChild(line);
+    }
+    }
+    console.log(commentsArray);
+}
 
-// localStorage.removeItem('comments');
+function clearComments(commentDiv) {
+    var commentDiv = document.getElementById("comments");
+    commentDiv.textContent = "";
+}
+
+function saveComments(comments) {
+    localStorage.setItem("comments", JSON.stringify(comments));
+}
+
+function getComments() {
+    return JSON.parse(localStorage.getItem("comments"));
+}
 // var books = [];
 
 // function Book(section, title, author, publisher, description, img, downLoadLink) {
@@ -246,7 +301,7 @@ function renderBookDetails(index) {
 //    }
 //     // enter the object and get the comment property and add it to the local storage
 //  }
-    
+
 //     // downloadButton(i); 
 
 // }
@@ -306,74 +361,7 @@ function renderBookDetails(index) {
 
 
 
-// var commentsArray = [];
-// /** Comment Constructor*/
-// function Comment(name, comment) {
-//     this.name = name;
-//     this.comment = comment;
-//     commentsArray.push(this);
-// }
-
-// if (localStorage.comments ) {
-//      commentsArray = getComments();
-//     console.log(commentsArray);
-// }
-
-// renderComment();
-// var bookComment = document.getElementById("bookComment");
-
-// bookComment.addEventListener("submit", function (event) {
-//      event.preventDefault(); 
-  
-//     var commentText = event.target.comment.value;
-//     var name = event.target.name.value;
-//     for (var i = 0; i < books.length; i++) {
-//         if (books[i].title===bookName){
-//         //    renderpics(i);
-//         //    renderpage(i);
-//          books[i].bookComments.push(commentText);
-//          var temp = books[i].bookComments
-//         books[i].bookComments =  temp
-//            console.log(books[i].bookComments);
-//            localStorage.setItem("objects", JSON.stringify(books));
-//         //   if(books[i].bookComments[0]){
-//         //    localStorage.setItem("comments", JSON.stringify(books[i].bookComments));
-//         //   }
-//            // enter the object and get the comment property and add it to the local storage
-//         }
-           
-//            // downloadButton(i); 
-       
-//        }
-//     new Comment(name, commentText);
-//     saveComments(commentsArray);
-//     renderComment();
-// });
-// function renderComment() {
-//     var commentDiv = document.getElementById("comments");
-//     clearComments();
-
-//     for (var i = 0; i < commentsArray.length; i++) {
-//         var p = document.createElement("p");
-//         var line = document.createElement("hr");
-//         console.log(commentsArray)
-//         p.textContent = commentsArray[i].name + " : " + commentsArray
-//         commentDiv.appendChild(p);
-//         commentDiv.appendChild(line);
-//     }
-//     console.log(commentsArray);
-// }
-// function clearComments(commentDiv) {
-//     var commentDiv = document.getElementById("comments");
-//     commentDiv.textContent = "";
-// }
-// function saveComments(comments) {
-//     localStorage.setItem("comments", JSON.stringify(comments));
-// }
-// function getComments() {
-//     return JSON.parse(localStorage.getItem("comments"));
-// }
-
+// v
 
 
 
