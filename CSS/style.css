@@ -224,3 +224,15 @@ opacity: .9;
 width: 100%;
 
 }*/
+#imhere:hover{
+
+    color:rgb(0,79,40);
+  
+  font-weight: bolder;
+  }
+  #aboutus:hover{
+
+    color:rgb(0,79,40);
+
+    font-weight: bolder;
+  }

@@ -44,9 +44,12 @@ function  Feedback  (firstName, lastName, email, question) {
 
 new Feedback (firstName , lastName ,email ,question);
 savingData();
-window.location.replace("http://127.0.0.1:5502/index.html"); }
-  
 sweet();
+//window.location.replace("http://127.0.0.1:5502/index.html");
+
+}
+  
+
 
 // create a local storge for one Question
 function savingData() {

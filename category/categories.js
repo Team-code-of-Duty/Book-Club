@@ -254,6 +254,7 @@ function renderImage(index){
   
     
     var bookImg = document.createElement("img");
+    bookImg.className+="curser"
     bookImg.setAttribute('alt', books[index].title);
     bookImg.setAttribute("id", books[index].title);
     bookImg.setAttribute("title",books[index].title);

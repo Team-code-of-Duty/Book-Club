@@ -106,7 +106,7 @@ margin-top: 2%;
 
 }
 .aside ul li .par
-{color:rgb(0,79,40);}
+{color:red;}
 /*-------------------------------------------------------*/
 
 
@@ -126,4 +126,8 @@ font-weight: bolder;
     color:rgb(0,79,40);
 
     font-weight: bolder;
+  }
+
+  .curser{
+      cursor: pointer;
   }
