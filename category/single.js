@@ -26,6 +26,9 @@ function renderBookDetails(index) {
     var topic = document.getElementById("topics");
     topic.textContent = " Topic :" + books[index].section;
 
+    var topic = document.getElementById("rate");
+    topic.textContent = " Rate :" + getRate();
+
 
     var description = document.getElementById("description");
     description.textContent = "Book Description: " + books[index].description;
@@ -35,6 +38,22 @@ function renderBookDetails(index) {
     downLoad.href = books[index].downLoadLink;
 
 
+}
+function getRate() {
+    if (localStorage.length > 0)
+    if (localStorage.getItem("rate") != null) {
+        var arrayOfRates = JSON.parse(localStorage.getItem("rate"));
+        var  raterNumber;
+        var  totalRate;
+        if (typeof arrayOfRates[currentBookIndex] != typeof undefined) {
+            raterNumber=parseInt(arrayOfRates[currentBookIndex].raterNumber);
+            totalRate=parseInt(arrayOfRates[currentBookIndex].totalRate);
+            var rate=(totalRate/raterNumber).toPrecision(2);
+            return rate;
+        }
+
+    } 
+    return "Not rated"; 
 }
 /** Comment Constructor*/
 var commentsArray = [];
@@ -201,7 +220,7 @@ function saveRate(rate) {
             arrayOfRates[currentBookIndex] = rate2;
             localStorage.setItem("rate", JSON.stringify(arrayOfRates));
         }//end else
-
+        renderBookDetails(currentBookIndex);
 }
 
 
