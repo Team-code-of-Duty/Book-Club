@@ -5,78 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your feedback</title>
+    <link href="//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular" rel="stylesheet" type="text/css"/>
+
     <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/penna" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../CSS/unified.css">
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="../CSS/unified.css">
 </head>
 
 <body>
     <header>
-        <img src="../logo.png" alt="" class="logo">
+        <a href="../index.html"><img src="../logo.png" alt="" class="logo"></a>
+        
         <nav class="main-nav">
             <ul class="items-container">
-                <li class="list-item"><a href="" class="link-item">Categories</a></li>
-                <li class="list-item"><a href="" class="link-item">About Us</a></li>
+                <li class="list-item"><a href="../category/categories.html" class="link-item">Categories</a></li>
+                <li class="list-item"><a href="../about-us/about-us.html" class="link-item">About Us</a></li>
             </ul>
         </nav>
 
-        <div id="rightSearc">
-            <form class="search">
-                <input type="text" placeholder="Search.." name="search2" class="input-search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
+        
     </header>
-    <main>
+    <h1 class="rateUs">Rate Us</h1>
+    <main class="feedForm">
         <form id="form">
-            <fieldset>
-                <legend>
-                    Your Feedback
-                </legend>
+            
+                
     
                 <label for="firstName">
                     First Name :
-                </label>
-                <input type="text" placeholder="" id="first" name="firstName">
+                </label><br>
+                <input type="text" placeholder="" id="first" name="firstName" class="input-field">
                 <br>
                 <br>
                 <label for="lastName">
                     Last Name :
                 </label>
-                <input type="text" placeholder="" id="last" name="lastName">
+                <br>
+                <input type="text" placeholder="" id="last" name="lastName" class="input-field">
                 <br>
                 <br>
                 <label for="email">
                     Your Email :
                 </label>
-                <input type="email" placeholder="" id="email" name="email">
+                <br>
+                <input type="email" placeholder="" id="email" name="email" class="input-field">
                 <br>
                 <br>
     
-                <input type="radio" id="male" name="gender" value="male"> Male
+                <input type="radio" id="male" name="gender" value="male" > <span class="male">Male</span>
                 <input type="radio" id="female" name="gender" value="female"> Female
                 <br><br>
     
     
                 <span> How do you rate your overall experience?</span>
                 <br>
-                <textarea id="question" required></textarea>
+                <textarea id="question" required class="textarea"></textarea>
                 <br><br>
     
     
     
-                <input type="checkbox" id="newsletter" />Send me monthly update on books and reviews
-                <br><br>
+                <input type="checkbox" id="newsletter" class="newsletter"/>Send updates on books and reviews
+        <br><br>
     
     
     
-                <input type="submit" placeholder="" id="myBtn" value="post">
+                <input type="submit" placeholder="" id="myBtn" value="Submit" class="submitbtn">
                 <br>
                 <br>
     
-            </fieldset>
-    
+          
     
         </form>
     </main>
@@ -104,6 +102,8 @@
                 <br>
                 <a href="../form/form.html" class="feedbackForm">Feedback form </a>
             </div>
+        </div>
+
             <div class="Terms-pollicies">
                 <h1>Terms & Policies</h1>
                 <br>
@@ -111,7 +111,6 @@
                 <br>
                 <a href="../about-us/policy.html" class="tearms">Privacy policy</a>
             </div>
-        </div>
         
     </footer>
     

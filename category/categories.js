@@ -181,7 +181,7 @@ function saveObjects(books) {
 }
 
 
-<<<<<<< HEAD
+
 
 
 
@@ -204,8 +204,9 @@ bookImg.addEventListener('click', function(event){
 
 
 });
-=======
+
 /**/ 
+
 var sec1 =document.getElementById("section-one");
 var sec2 =document.getElementById("section-tow");
 sec1.className="section-one";
@@ -236,12 +237,12 @@ function render(section){
 
 for(var i=section;i<(section+6);i++){
     renderImage(i);
->>>>>>> c3f74b611bd05ca5143f456c22077dd1b0e3a924
+
 }
 }
 function renderImage(index){
 
-<<<<<<< HEAD
+
 function render(index) {
     var div = document.createElement("div");
     div.className += "img1-s1";
@@ -271,11 +272,13 @@ function render(index) {
     div.appendChild(innerDiv);
     //console.log("hello")
     root.appendChild(div);
-=======
+
 var div =document.createElement("div");
 div.className="img1-s1";
+
 var bookImg=document.createElement("img");
 var innerDiv=document.createElement("div");
+innerDiv.className="bookName";
 var firstParagraph=document.createElement("p");
 firstParagraph.className="book-title";
 var br=document.createElement("br");
@@ -289,13 +292,18 @@ innerDiv.appendChild(br);
 innerDiv.appendChild(br);
 div.appendChild(innerDiv);
 
+
 sec2.appendChild(div);
->>>>>>> c3f74b611bd05ca5143f456c22077dd1b0e3a924
+
+
+sec1.appendChild(div);
+
 
 }
 
 
-<<<<<<< HEAD
+ 
+
 // var bookImg = document.getElementById("bookImage");
 
 // bookImg.addEventListener('click', function(event){
@@ -308,6 +316,6 @@ sec2.appendChild(div);
 
 
 // });
-=======
->>>>>>> c3f74b611bd05ca5143f456c22077dd1b0e3a924
+
+
 
