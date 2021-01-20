@@ -45,13 +45,10 @@ function  Feedback  (firstName, lastName, email, question) {
 
 new Feedback (firstName , lastName ,email ,question);
 savingData();
-<<<<<<< HEAD
 sweet();
 //window.location.replace("http://127.0.0.1:5502/index.html");
-=======
 console.log("test");
-window.location.replace("../index.html");
->>>>>>> f623387d3bbb569472f09328d22190c156144284
+
 
 }
   
