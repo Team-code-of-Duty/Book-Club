@@ -31,14 +31,17 @@
     <div class="parent">
         <main class="parent-container">
             <div class="details-container">
-                <img class="img"
+
+                <img id="img1" class="img"
                     src="https://media-exp1.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2159024400&v=beta&t=CrP5Le1mWICRcaxIGNBuajHcHGFPuyNA5C8DI339lSk">
+
+
                 <div class="book-info">
-                    <li class="infoItems">Book Title:</li>
-                    <li class="infoItems"> Author: </li>
-                    <li class="infoItems">Publisher: </li>
-                    <li class="infoItems"> Topic: </li>
-                    <li class="infoItmes"><span class="fa fa-star checked"></span>
+                    <li id="title" class="infoItems">Book Title:</li>
+                    <li id="Author" class="infoItems"> Author: </li>
+                    <li id="Publisher" class="infoItems">Publisher: </li>
+                    <li id="topics" class="infoItems"> Topic: </li>
+                    <li id="rate" class="infoItmes"><span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
@@ -49,7 +52,7 @@
             </div>
             <hr class="firstHr">
             <div class="description-container">
-                <p>
+                <p id="description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, iusto quia. Soluta perferendis,
                     voluptates expedita illo quidem quo, odio non vero dolorum, molestias qui accusantium mollitia
                     officia id. Optio, similique.
@@ -58,14 +61,16 @@
                     assumenda eaque?
                 </p>
                 <br>
-                <a class="download" href=""
-                    download="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg"> Download</a>
+                <a id="down" class="download" href=""> Download</a>
+
+                    <!-- <button id="myButton" class="download" >Download</button> -->
+                  
             </div>
         </main>
         <div class="parent-container2">
             
             <div class="book-form">
-                <form id="book-comment">
+                <form id="bookComment">
                     <fieldset>
                         <legend>Book Review</legend>
                         <div id="comments">
@@ -107,6 +112,7 @@
                 <br>
                 <a href="../form/form.html" class="feedbackForm">Feedback form </a>
             </div>
+        </div>
             <div class="Terms-pollicies">
                 <h1>Terms & Policies</h1>
                 <br>
@@ -114,9 +120,11 @@
                 <br>
                 <a href="../about-us/policy.html" class="tearms">Privacy policy</a>
             </div>
-        </div>
+       
         
     </footer>
+
+    <script src="../category/single.js"></script>
 </body>
 
 </html>
