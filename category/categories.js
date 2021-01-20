@@ -12,7 +12,8 @@ function Book(section, title, author, publisher, description, img, downLoadLink)
     this.author = author;
     this.publisher = publisher;
     this.img = img;
-    this.bookComments = []; 
+    this.bookComments = [];
+    this.downLoadLink=downLoadLink; 
     books.push(this);
 
 }
@@ -177,40 +178,34 @@ new Book("business",
 
 saveObjects(books); 
 function saveObjects(books) {
-    localStorage.setItem("objects", JSON.stringify(books));
+    localStorage.setItem("books", JSON.stringify(books));
 }
 
+// var root = document.getElementById("section-one");
+// root.className += "section-one";
 
 
+// for (var i = 0; i < books.length; i++) {
+//    // render(i);
+//     var bookImg = document.getElementById(books[i].title);
 
-
-
-var root = document.getElementById("section-one");
-root.className += "section-one";
-
-
-for (var i = 0; i < books.length; i++) {
-    render(i);
-    var bookImg = document.getElementById(books[i].title);
-
-bookImg.addEventListener('click', function(event){
+// bookImg.addEventListener('click', function(event){
     
-    var name = event.target.title;
-    console.log("book name" + name);
-    console.log(name);
-    console.log(event.target.title); 
-    localStorage.setItem('bookname', JSON.stringify(name));
-     window.location.replace("http://127.0.0.1:5502/category/single.html");
+//     var name = event.target.title;
+//     console.log("book name" + name);
+//     console.log(name);
+//     console.log(event.target.title); 
+//     localStorage.setItem('bookname', JSON.stringify(name));
+//      window.location.replace("http://127.0.0.1:5502/category/single.html");
 
 
-});
+// });
 
-/**/ 
+// /**/ 
 
 var sec1 =document.getElementById("section-one");
-var sec2 =document.getElementById("section-tow");
 sec1.className="section-one";
-sec2.className="section-one";
+
 
 var a1=document.getElementById("programming");
 var a2=document.getElementById("literature");
@@ -233,21 +228,18 @@ function businessLinkHandler(){
 }    
 function render(section){
     sec1.innerHTML="";
-    sec2.innerHTML="";
-
 for(var i=section;i<(section+6);i++){
     renderImage(i);
 
 }
-}
+
+}//end render ()
+
 function renderImage(index){
-
-
-function render(index) {
     var div = document.createElement("div");
     div.className += "img1-s1";
     var link = document.createElement("p");
-    // link.setAttribute("href","single.html");
+    link.setAttribute("href","single.html");
     link.setAttribute("id","image-link");
   
     
@@ -255,12 +247,14 @@ function render(index) {
     bookImg.setAttribute('alt', books[index].title);
     bookImg.setAttribute("id", books[index].title);
     bookImg.setAttribute("title",books[index].title);
+
     var innerDiv = document.createElement("div");
     var firstParagraph = document.createElement("p");
     firstParagraph.className += "book-title";
     var br = document.createElement("br");
     var seconedParagraph = document.createElement("p");
     bookImg.src = books[index].img;
+    console.log(books[index].title);
     firstParagraph.textContent = books[index].title;
     seconedParagraph.textContent = books[index].description;
     link.appendChild(bookImg);
@@ -268,41 +262,24 @@ function render(index) {
     innerDiv.appendChild(firstParagraph);
     innerDiv.appendChild(br);
     innerDiv.appendChild(br);
-    innerDiv.appendChild(seconedParagraph);
+   // innerDiv.appendChild(seconedParagraph);
+
     div.appendChild(innerDiv);
     //console.log("hello")
-    root.appendChild(div);
-
-var div =document.createElement("div");
-div.className="img1-s1";
-
-var bookImg=document.createElement("img");
-var innerDiv=document.createElement("div");
-innerDiv.className="bookName";
-var firstParagraph=document.createElement("p");
-firstParagraph.className="book-title";
-var br=document.createElement("br");
-
-bookImg.src=books[index].img;
-firstParagraph.textContent=books[index].title;
-
-div.appendChild(bookImg);
-innerDiv.appendChild(firstParagraph);
-innerDiv.appendChild(br);
-innerDiv.appendChild(br);
-div.appendChild(innerDiv);
-
-
-sec2.appendChild(div);
-
-
-sec1.appendChild(div);
+    
+    div.addEventListener('click',function click() {
+    clickHandler(index);    
+    });
+    sec1.appendChild(div);
 
 
 }
 
+function clickHandler(params) {
+    localStorage.setItem('currentBookIndex', params);
+    window.location.replace("single.html"); 
+}
 
- 
 
 // var bookImg = document.getElementById("bookImage");
 
@@ -311,11 +288,8 @@ sec1.appendChild(div);
 //     console.log("book name" + name);
 //     console.log(name);
 //     console.log(event.target.title); 
-//     localStorage.setItem('bookname', JSON.stringify(name));
-//     // window.location.replace("https://www.tutorialrepublic.com/");
+//     
+//     window.location.replace("https://www.tutorialrepublic.com/");
 
 
 // });
-
-
-

@@ -11,15 +11,14 @@ box-sizing: border-box;
 
 .parent{
 display: flex;
-margin-top:49px;
+margin-top:16px;
+margin-bottom: 100px;
 padding-left: 10px;
 padding-right: 10px;
 }
 
 .parent-container {
-width: 60%;
-
-
+width: 100%;
 }
 .details-container{
 position: relative;
@@ -32,14 +31,15 @@ list-style: none;
 }
 
 .book-info{
-position: absolute;
-top: 20px;
-left:223px;
+display: inline;
+
 }
 
 
 .parent-container .details-container .img{
 border: 2px solid #000;
+float: left;
+margin-right: 8px;
 }
 .comment{
 
@@ -112,6 +112,7 @@ margin-top: 5px;
 
 .firstHr{
 width: 670px;
+margin-top: 16px;
 }
 
 
