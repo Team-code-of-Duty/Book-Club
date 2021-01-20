@@ -46,9 +46,7 @@ new Feedback (firstName , lastName ,email ,question);
 
 savingData();
 
-sweet()
-window.location.replace("http://127.0.0.1:5502/index.html");
-
+sweet();
 }
   
 
@@ -56,7 +54,10 @@ window.location.replace("http://127.0.0.1:5502/index.html");
 function savingData() {
     localStorage.setItem('feedbacks', JSON.stringify(feedbackArray));
 }
-function time(){
-setInterval(sweet,3000);}
-function sweet(){
-  swal("Good job!", "You clicked the button!", "success");}
+async function sweet(){
+  await swal("Thank you", "", "success");
+   window.location.replace("http://127.0.0.1:5502/index.html");
+}
+  // swal("Good job!", "You clicked the button!", "success", {
+  //   button: "Aww yiss!",
+  // });
