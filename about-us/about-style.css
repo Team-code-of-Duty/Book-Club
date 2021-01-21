@@ -1,86 +1,84 @@
-body{
-  color: white;
-  background-image: url(https://wallpaperaccess.com/full/3876048.jpg);
-  background-repeat: no-repeat;
- 
+body {
+    color: white;
+    background-image: url(https://wallpaperaccess.com/full/3876048.jpg);
+    background-repeat: no-repeat;
 }
-.title{
-  display: block;
-  text-align: center;
-  margin-top: 50px;
-  width: 100%;
+
+.title {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
 }
- /* h1,h2{
+
+
+/* h1,h2{
    display: block;
    text-align: center;
  } */
 
- .title h1 {
-/* text-shadow: 2px 2px .5px #a20a0a ; */
-font-size: 60px;
-/* background:linear-gradient(white,#a20a0a); */
-
-color:white;
-/* -webkit-text-fill-color: transparent;
+.title h1 {
+    /* text-shadow: 2px 2px .5px #a20a0a ; */
+    font-size: 60px;
+    /* background:linear-gradient(white,#a20a0a); */
+    color: white;
+    /* -webkit-text-fill-color: transparent;
 -webkit-background-clip:text ; */
-
- }
- .Our-goal{
-   background-image: url(book.png);
-   background-repeat: no-repeat;
-width: 756px;
-height: 329px;
-margin: auto;
-margin-top: 70px;
-
-vertical-align: middle;
-
- }
- .our-vision{
-  float: right;
-  margin-top: -130px;
-  width: 329px;
-  
- }
-.our-mission{
-  display: inline-block;
-  margin-left: 87px;
-  margin-top: 61px;
-  width: 378px;
-  height: 130px;;
-}
-p{
-  font-family: "Tiempos";
-  color: #a20a0a;
-}
-.Our-goal h2{
-  color: #a20a0a
-
-  ;
-}
-p{
- font-size: 18px;
 }
 
- .image {
+.Our-goal {
+    background-image: url(book.png);
+    background-repeat: no-repeat;
+    width: 756px;
+    height: 329px;
+    margin: auto;
+    margin-top: 70px;
+    vertical-align: middle;
+}
+
+.our-vision {
+    float: right;
+    margin-top: -130px;
+    width: 329px;
+}
+
+.our-mission {
+    display: inline-block;
+    margin-left: 87px;
+    margin-top: 61px;
+    width: 378px;
+    height: 130px;
+    ;
+}
+
+p {
+    font-family: "Tiempos";
+    color: #a20a0a;
+}
+
+.Our-goal h2 {
+    color: #a20a0a;
+}
+
+p {
+    font-size: 18px;
+}
+
+.image {
     opacity: 1;
     transition: transform .2s;
     border-radius: 50%;
- width: 70px;
+    width: 70px;
     transition: .5s ease;
     backface-visibility: hidden;
+    transition: transform .2s;
+    margin: 0 auto;
+}
 
-        
-        transition: transform .2s;
-      
-        margin: 0 auto;  
-     
-  }
-  
-  .middle {
+.middle {
     transition: .5s ease;
     opacity: 0;
-    height:50px;
+    height: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -88,74 +86,76 @@ p{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     margin-bottom: 50px;
-  }
-  .containe{
-margin-right: 10px;
-transform: scale(1.5)
-  }
-  
-  .containe:hover .image {
-    
+}
+
+.containe {
+    margin-right: 10px;
     transform: scale(1.5)
-  }
-  
-  /*.containe:hover .middle {
+}
+
+.containe:hover .image {
+    transform: scale(1.5)
+}
+
+
+/*.containe:hover .middle {
     opacity: 1;
     margin-top: 20px;
   }*/
-  
-  .text {
+
+.text {
     background-color: #e3fce3;
     color: rgb(0, 0, 0);
     font-size: 16px;
     padding: 16px 20px;
-  
     font-family: "Lucida Console", "Courier New", monospace;
-  }
+}
 
-  .our-pic {
-      display: flex;
-      margin-left: 350px;
-      margin-bottom: 55px;
-  }
-  .team-des {
-    
-    margin-top:25px;
+.our-pic {
+    display: flex;
+    margin-left: 350px;
+    margin-bottom: 55px;
+}
+
+.team-des {
+    margin-top: 25px;
     margin-bottom: 20px;
     color: white;
     width: 500px;
-text-align: center;
-margin-left: 375px;
-margin-bottom: 100px;
-  }
-  .team-des p{
+    text-align: center;
+    margin-left: 375px;
+    margin-bottom: 100px;
+}
+
+.team-des p {
     color: white;
-    
-  }
-.meet-us{
-  font-family: "Tiempos";
-  color:#ffffff;
-font-size: 45px;
-text-align: center;
-margin-top: 56px;
-margin-bottom: 76px;
-}
-.motto{
-  font-size:30px;
-color:white}
-
-
-
-#aboutus{
-
-  color:rgb(0,79,40);
-
-  font-weight: bolder;
 }
 
-#imhere:hover{
+.meet-us {
+    font-family: "Tiempos";
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 76px;
+}
 
-  color:rgb(0,79,40);
+.motto {
+    font-size: 25px;
+    color: white
+}
 
-font-weight: bolder;
+#aboutus {
+    color: rgb(0, 79, 40);
+    font-weight: bolder;
+}
+
+#imhere:hover {
+    color: rgb(0, 79, 40);
+    font-weight: bolder;
+}
+
+#Home:hover {
+    color: rgb(0, 79, 40);
+    font-weight: bolder;
 }

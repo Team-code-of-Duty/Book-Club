@@ -1,16 +1,16 @@
-*{
-margin:0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
 
 
-
-a{
-text-decoration: none;
-color: white;
-font-size: 15px;
-}
 /*header{
 display: flex;
 vertical-align: middle;
@@ -23,10 +23,10 @@ display:inline-block;
 margin-right: 150px;
 }*/
 
-h1 > *{
-font-size: 15px;
-
+h1>* {
+    font-size: 15px;
 }
+
 
 /*.main-nav{
 display: inline-block;
@@ -35,37 +35,36 @@ top: 14px;
 left: 409px;
 
 }*/
-.list-item{
-margin-right: 70PX;
-display: inline;
+
+.list-item {
+    margin-right: 70PX;
+    display: inline;
 }
 
-.rightSearc{
+.rightSearc {
+    display: inline-block;
+}
 
-display: inline-block;
+.search {
+    display: inline;
+    position: absolute;
+    top: 20px;
+    left: 850px;
+}
 
+.input-search {
+    width: 300px;
+}
+
+.link-item {
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: "penna";
+    color: white;
+    text-decoration: none;
 }
 
 
-.search{
-display: inline;
-position:absolute;
-top: 20px;
-left: 850px;
-}
-.input-search{
-
-width:300px;
-}
-
-.link-item{
-font-size: 22px;
-font-weight: bolder;
-font-family:"penna";
-color: white;
-text-decoration: none;
-
-}
 /*.slider{
 width: 500px;
 height: 300px;
@@ -73,166 +72,186 @@ margin-left:370px ;
 margin-bottom: 50px;
 }
 */
-.img-feedback{
 
-width: 1000px;
-margin-left: 100px;
-
+.img-feedback {
+    width: 1000px;
+    margin-left: 100px;
 }
 
+p {
+    color: black;
+    width: 250px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-p{
-color:black;
-width: 250px;
-border-radius: 30px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.web-feedback {
+    width: 90%;
+    margin: auto;
+    height: 600px;
+    position: relative;
+}
 
+.web-feedback>* {
+    position: absolute;
+    color: black;
+    background-image: url(https://img.freepik.com/free-photo/grunge-old-vintage-retro-paper-texture-background_47840-948.jpg?size=626&ext=jpg);
+    box-sizing: border-box;
+    padding: 10px;
+}
 
+.ptwo {
+    top: 150px;
+    left: 120px;
 }
-.web-feedback{
-width: 1000px;
-height: 600px;
-position: relative;;
-}
-.web-feedback >*{
-position:absolute;
-color: black;
-background-image: url(https://img.freepik.com/free-photo/grunge-old-vintage-retro-paper-texture-background_47840-948.jpg?size=626&ext=jpg);
-box-sizing: border-box;
-padding: 10px;
-}
-.ptwo{
-top:150px;
-left:150px;
-}
-.pthree{
-top:211px;
-left:450px;
-}
-.pfour{
-top:70px;
-left:600px;
-}
-.pfive{
-top:280px;
-left:800px;
-}
-.psix{
-top:170px;
-left:840px;
 
+.pthree {
+    top: 211px;
+    left: 500px;
+}
+
+.pfour {
+    top: 100px;
+    left: 820px;
+}
+
+.pfive {
+    top: 10px;
+    left: 500px;
 }
 
 .psix {
-animation: flyin 1.2s ease forwards;
-opacity: 0;
-transform: scale(2);
-filter: blur(4px);
+    top: 10px;
+    left: 1000px;
 }
+
+
+/* .psix {
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(4px);
+} */
 
 @keyframes flyin {
-to { 
-filter: blur(0);
-transform: scale(1);
-opacity: 1;
-}
+    to {
+        filter: blur(0);
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-
-.footer a, h4 {
-font-size: 20px;
+.footer a,
+h4 {
+    font-size: 20px;
 }
 
 .contact-info {
-font-size: 20px;
-margin-top: 10px;
+    font-size: 20px;
+    margin-top: 10px;
 }
-
-
-
-
 
 
 /* The slider: */
-.slider{
-width: 90%;
 
-/* The position of the element is set relative to its original position: */
-position: relative;
-/* Center horizontally: */
-margin: auto;
-margin-top: 15px;
-height: 300px;
+.slider {
+    width: 90%;
+    /* The position of the element is set relative to its original position: */
+    position: relative;
+    /* Center horizontally: */
+    margin: auto;
+    margin-top: 15px;
+    height: 300px;
 }
+
+
 /* The picture is scaled in relation to the parent element: */
+
 .slider .item img {
-/* The element is resized to fill the block and maintain proportions: */
-object-fit: cover;
-width: 100%;
-height: 400px;
+    /* The element is resized to fill the block and maintain proportions: */
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
 }
+
+
 /* Back and forward buttons: */
-.slider .previous, .slider .next {
-/* Adds an icon to the cursor when it is over the button: */
-cursor: pointer;
-/* The position of the element is set relative to the borders of the browser: */
-position: absolute;
-top: 65%;
-width:auto;
-margin-top: -22px;
-padding: 16px;
-/* Styling the buttons themselves: */
-color: white;
-font-weight: bold;
-font-size: 16px;
-/* Background fading on hover: */
-transition: 0.6s ease;
-/* Rounding the borders: */
-border-radius: 0 3px 3px 0;
-}
+
+.slider .previous,
 .slider .next {
-right: 0;
-border-radius: 3px 0 0 3px;
+    /* Adds an icon to the cursor when it is over the button: */
+    cursor: pointer;
+    /* The position of the element is set relative to the borders of the browser: */
+    position: absolute;
+    top: 65%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* Styling the buttons themselves: */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* Background fading on hover: */
+    transition: 0.6s ease;
+    /* Rounding the borders: */
+    border-radius: 0 3px 3px 0;
 }
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
 /* When you hover over the buttons, add the background of the buttons: */
+
 .slider .previous:hover,
 .slider .next:hover {
-background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
-/* Slide animation: */
-.slider .item {
-animation-name: fade;
-animation-duration: 1.5s;
-}
-@keyframes fade {
-/* Set and change the transparency: */
-from {
-opacity: 0.4
-}
-to {
-opacity: 1
-}
-}
-.slider-con{
 
-height: 480px;
-margin-top: 35px;
-} 
+
+/* Slide animation: */
+
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    /* Set and change the transparency: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.slider-con {
+    height: 480px;
+    margin-top: 35px;
+    opacity: .9;
+}
+
+
 /*.footer {
 font-family: "penna";
 opacity: .9;
 width: 100%;
 
 }*/
-#imhere:hover{
 
-    color:rgb(0,79,40);
-  
-  font-weight: bolder;
-  }
-  #aboutus:hover{
-
-    color:rgb(0,79,40);
-
+#imhere:hover {
+    color: rgb(0, 79, 40);
     font-weight: bolder;
-  }
+}
+
+#aboutus:hover {
+    color: rgb(0, 79, 40);
+    font-weight: bolder;
+}
+
+#Home:hover {
+    color: rgb(0, 79, 40);
+    font-weight: bolder;
+}
