@@ -1,203 +1,225 @@
 .checked {
-color: orange;
+    color: orange;
 }
 
-
-*{
-margin:0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.parent{
-display: flex;
-margin-top:16px;
-margin-bottom: 100px;
-padding-left: 10px;
-padding-right: 10px;
+.parent {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .parent-container {
-width: 100%;
+    width: 100%;
 }
-.details-container{
-position: relative;
 
-
+.details-container {
+    position: relative;
 }
+
 .book-info li {
-
-list-style: none;
+    list-style: none;
 }
 
-.book-info{
-display: inline;
-
+.book-info {
+    display: inline;
 }
 
-
-.parent-container .details-container .img{
-border: 2px solid #000;
-float: left;
-margin-right: 8px;
+.parent-container .details-container .img {
+    border: 2px solid #000;
+    float: left;
+    margin-right: 8px;
 }
-.comment{
 
-width: 50px;
+.comment {
+    width: 50px;
 }
-legend{
 
-color:white;
+legend {
+    color: white;
 }
+
 .parent-container2 {
     position: relative;
-background-color: black;
-opacity: .8;
-width: 40%;
-
-
+    background-color: black;
+    opacity: .8;
+    width: 40%;
 }
+
 .book-rating {
-
-margin-left:5px;
-
+    margin-left: 5px;
 }
-.book-form{
-margin: 50px 20px 10px 20px;
+
+.book-form {
+    margin: 50px 20px 10px 20px;
 }
 
 .book-form input[type=text] {
-width: 62%;
-
-padding: 8px 10;
-margin: 12px 0;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-}
-.description-container .download{
-background-color: darkred;
-padding: 10px;
-margin-top: 20px;
-text-decoration: none;
-color: white;
-}
-.description-container .download:hover{
-border: 2px solid darkred;
-color: darkred;
-background-color: #fff;
-}
-.description-container p{
-margin: 2px;
-}
-.infoItems{
-padding: 6px;
+    width: 62%;
+    padding: 8px 10;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
+.description-container .download {
+    background-color: darkred;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
 
+.description-container .download:hover {
+    border: 2px solid darkred;
+    color: darkred;
+    background-color: #fff;
+}
+
+.description-container p {
+    margin: 2px;
+}
+
+.infoItems {
+    padding: 6px;
+}
 
 
 /*-------------------------------------------------------*/
-label, legend{
-margin-left: 8px;
-}
-#name{
-width: 200px;
-margin-left: 2px;
-}
-.recaent-coment{
-margin-left: 8px;
-margin-top: 5px;
+
+label,
+legend {
+    margin-left: 8px;
 }
 
-.firstHr{
-width: 670px;
-margin-top: 16px;
+#name {
+    width: 200px;
+    margin-left: 2px;
+}
+
+.recaent-coment {
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.firstHr {
+    width: 670px;
+    margin-top: 16px;
 }
 
 #aboutus:hover {
-    color:rgb(0,79,40);
+    color: rgb(0, 79, 40);
     font-weight: bolder;
 }
 
-#imhere:hover{
-    color:rgb(0,79,40);
+#imhere:hover {
+    color: rgb(0, 79, 40);
     font-weight: bolder;
 }
+
+#Home:hover {
+    color: rgb(0, 79, 40);
+    font-weight: bolder;
+}
+
+
 /* rating */
 
- @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.center{
-  position: absolute; 
-   top: 33%;
-  left: -18%; 
-  transform: translate(-50%, -50%);
+
+.center {
+    position: absolute;
+    top: 33%;
+    left: -18%;
+    transform: translate(-50%, -50%);
 }
-.center .stars{
-  height: 150px;
-  width: 500px;
-  text-align: center;
+
+.center .stars {
+    height: 150px;
+    width: 500px;
+    text-align: center;
 }
-.stars input{
-  display: none;
+
+.stars input {
+    display: none;
 }
-.stars label{
-  float: right;
-  font-size: 30px;
-  color: lightgrey;
-  margin: 0 5px;
-  text-shadow: 1px 1px #bbb;
+
+.stars label {
+    float: right;
+    font-size: 30px;
+    color: lightgrey;
+    margin: 0 5px;
+    text-shadow: 1px 1px #bbb;
 }
-.stars label:before{
-  content: '★';
+
+.stars label:before {
+    content: '★';
 }
-.stars input:checked ~ label{
-  color: rgb(241, 9, 9);
-  text-shadow: 1px 1px #c60;
+
+.stars input:checked~label {
+    color: rgb(241, 9, 9);
+    text-shadow: 1px 1px #c60;
 }
-.stars:not(:checked) > label:hover,
-.stars:not(:checked) > label:hover ~ label{
-  color: rgb(255, 0, 0);
+
+.stars:not(:checked)>label:hover,
+.stars:not(:checked)>label:hover~label {
+    color: rgb(255, 0, 0);
 }
-.stars input:checked > label:hover,
-.stars input:checked > label:hover ~ label{
-  color: rgb(255, 0, 0);
-  text-shadow: 1px 1px goldenrod;
+
+.stars input:checked>label:hover,
+.stars input:checked>label:hover~label {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px goldenrod;
 }
-.stars .result:before{
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 50%;
-  transform: translateX(-47%);
-  bottom: -30px;
-  font-size: 30px;
-  font-weight: 500;
-  color: gold;
-  font-family: 'Poppins', sans-serif;
-  display: none;
+
+.stars .result:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 50%;
+    transform: translateX(-47%);
+    bottom: -30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: gold;
+    font-family: 'Poppins', sans-serif;
+    display: none;
 }
-.stars input:checked ~ .result:before{
-  display: block;
+
+.stars input:checked~.result:before {
+    display: block;
 }
-.stars #five:checked ~ .result:before{
-  content: "I love it ";
+
+.stars #five:checked~.result:before {
+    content: "I love it ";
 }
-.stars #four:checked ~ .result:before{
-  content: "I like it ";
+
+.stars #four:checked~.result:before {
+    content: "I like it ";
 }
-.stars #three:checked ~ .result:before{
-  content: "It's good ";
+
+.stars #three:checked~.result:before {
+    content: "It's good ";
 }
-.stars #two:checked ~ .result:before{
-  content: "I don't like it ";
+
+.stars #two:checked~.result:before {
+    content: "I don't like it ";
 }
-.stars #one:checked ~ .result:before{
-  content: "I hate it ";
-} 
+
+.stars #one:checked~.result:before {
+    content: "I hate it ";
+}
