@@ -100,30 +100,7 @@ p {
     padding: 10px;
 }
 
-.ptwo {
-    top: 150px;
-    left: 120px;
-}
 
-.pthree {
-    top: 211px;
-    left: 500px;
-}
-
-.pfour {
-    top: 100px;
-    left: 820px;
-}
-
-.pfive {
-    top: 10px;
-    left: 500px;
-}
-
-.psix {
-    top: 10px;
-    left: 1000px;
-}
 
 
 /* .psix {
@@ -255,3 +232,78 @@ width: 100%;
     color: rgb(0, 79, 40);
     font-weight: bolder;
 }
+
+.pone{
+    position: relative;
+  animation-name: example;
+  animation-duration: 9s;
+  top: 60px;
+    left: 60px;
+}
+
+.ptwo {
+    position: relative;
+    animation-name:etwo; 
+    animation-duration: 9s;
+     top: 1px;
+    left: 750px;
+}
+
+.pthree {
+    position: relative;
+    animation-name:efive ; 
+    animation-duration: 3s;
+    top: 41px;
+    left: 407px;
+}
+
+.pfour {
+    position: relative;
+    animation-name: ethree; 
+    animation-duration: 9s;
+    top: 135px;
+    left: 54px;
+}
+
+.pfive {
+    position: relative;
+    animation-name: efour;
+    animation-duration:9s;
+    top: 60px;
+    left: 800px;
+}
+
+
+.psix {
+    position: relative;
+    /* animation-name: example; */
+    animation-duration: 9s;
+    top: 10px;
+    left: 1000px;
+}
+@keyframes example {
+    0%   {top:0px}
+    100% {top:390px }
+  }
+  @keyframes etwo {
+    0%   {top:0px}
+    100% {top:300px }
+ }
+ @keyframes ethree {
+    0%   {top:100px}
+    100% {top:-100px }
+ }
+
+ @keyframes efour {
+    0%   {top:100px}
+    100% {top:-100px }
+ }
+
+ @keyframes efive {
+    0%   {transform: scale(.5);}
+    20%{transform: scale(1);} 
+       40% {transform: scale(1.5);}
+
+
+    80% {transform: scale(1.5);}
+    100% {transform: scale(.5);}}

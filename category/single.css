@@ -142,15 +142,16 @@ legend {
 }
 
 .center {
-    position: absolute;
-    top: 33%;
-    left: -18%;
+    
+margin-top: 50px;
+margin-left: 180px;
+
     transform: translate(-50%, -50%);
 }
 
 .center .stars {
-    height: 150px;
-    width: 500px;
+    height: 50px;
+    width: 175px;
     text-align: center;
 }
 
@@ -189,7 +190,7 @@ legend {
 .stars .result:before {
     position: absolute;
     content: "";
-    width: 100%;
+top: 100%;
     left: 50%;
     transform: translateX(-47%);
     bottom: -30px;
