@@ -1,94 +1,132 @@
 * {
-margin:0;
-padding: 0;
-box-sizing: border-box;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .aside {
-width: 20%;
+    width: 20%;
+    background-color: black;
+    opacity: .8;
+    font-family: 'Tiempos';
+    height: 40%;
+    margin-top: 37px;
+    margin-left: -161px;
 }
 
 .aside h1 {
-padding: 8px;
-padding-bottom:2px;
-color: black;
+    padding: 8px;
+    padding-bottom: 2px;
+    color: white;
 }
 
 .aside ul {
-padding: 8px;
-color: black;
-list-style-type: none;
-
+    padding: 8px;
+    color: white;
+    list-style-type: none;
 }
-.aside ul li  {
-padding-bottom: 10px;
 
+.aside ul li {
+    padding-bottom: 10px;
+    color: white;
 }
 
 .aside ul li p {
-padding-bottom: 10px;
-text-decoration: none;
-color: black;
-font-size: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .aside ul li p:hover {
-font-size: 30px;
+    cursor: pointer;
 }
 
-
 .container {
-display: flex;
-background-image: url(https://img.freepik.com/free-photo/grunge-old-vintage-retro-paper-texture-background_47840-948.jpg?size=626&ext=jpg);
-width: 70%;
-margin: auto;
-margin-top: 50px;
-padding-bottom: 16px;
+    display: flex;
+    /* background-image: url(https://img.freepik.com/free-photo/grunge-old-vintage-retro-paper-texture-background_47840-948.jpg?size=626&ext=jpg); */
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 16px;
 }
 
 .main {
-width: 80%;
-margin: auto;
-color: black;
+    width: 80%;
+    margin-left: 260px;
+    color: black;
 }
 
-.section-one{
-padding: 8px;
+.section-one {
+    padding: 8px;
 }
 
-.img1-s1{
-display: block;
-margin-top: 2%;
-margin-bottom: 2%;
+.section-one .img1-s1 img {
+    width: 300px;
+    height: 400px;
 }
-.section-one .img1-s1 img{
-width: 300px;
-height: 400px;
-}
-.section-one .img1-s1 .book-title{
-color: blue;
-font-size: xx-large;
-}
-.section-one .img1-s1 div{
-display: block;
-padding-left: 8px;
 
+.section-one .img1-s1 .book-title {
+    color: white;
+    background-color: black;
+    opacity: .7;
+    text-align: center;
+    font-size: x-large;
+    width: 291px;
+}
+
+.section-one .img1-s1 div {
+    display: block;
+    padding-left: 8px;
 }
 
 .title h1 {
-text-align: center;
-text-decoration: underline;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .checked {
-color: orange;
+    color: orange;
 }
 
+.TobViewd {
+    margin-bottom: 80px;
+}
 
+.img1-s1 {
+    padding: 0px;
+    /*display: block;*/
+    margin-top: 2%;
+}
 
+.aside ul li .par {
+    color: #a20a0a;
+}
 
 
 /*-------------------------------------------------------*/
 
+.bookName {
+    margin-left: -4px;
+}
 
+#imhere {
+    color: rgb(0, 79, 40);
+    font-weight: bolder;
+}
+
+#aboutus:hover {
+    color: rgb(0, 79, 40);
+    font-weight: bolder;
+}
+
+#Home:hover {
+    color: rgb(0, 79, 40);
+    font-weight: bolder;
+}
+
+.curser {
+    cursor: pointer;
+}

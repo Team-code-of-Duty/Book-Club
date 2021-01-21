@@ -3,12 +3,13 @@
 var feedbackArray =[];
 // To check if the local storage works and push the elements newly created to its original place of storage
 
-if (localStorage.length > 0 ) {
+if (localStorage.getItem('feedbacks')!=null ) {
   feedbackArray = getFeedbackArray(JSON.parse(localStorage.getItem('feedbacks')))
 }
 // A temp storage for elements pushed into the array
 
 function getFeedbackArray(array){
+  console.log(array)
   var temp=[]
 for (var index = 0; index < array.length; index++) {
   temp.push(new Feedback(array[index].firstName,array[index].lastName,array[index].email,array[index].question))
@@ -31,6 +32,7 @@ function  Feedback  (firstName, lastName, email, question) {
   form.addEventListener('submit', formHandler);
   function formHandler(event) {
       event.preventDefault();
+
       //  variables below targets the values that have been inputed into from the html
   // (a link through the html form and the java scripts)
 
@@ -43,7 +45,13 @@ function  Feedback  (firstName, lastName, email, question) {
 
 new Feedback (firstName , lastName ,email ,question);
 savingData();
-  }
+sweet();
+//window.location.replace("http://127.0.0.1:5502/index.html");
+console.log("test");
+
+
+}
+  
 
 
 // create a local storge for one Question
@@ -52,3 +60,14 @@ function savingData() {
 }
 
 
+function time(){
+  setInterval(sweet,3000);}
+  function sweet(){
+    swal("Good job!", "You clicked the button!", "success");} 
+  async function sweet(){
+    await swal("Thank you", "", "success");
+     window.location.replace("http://127.0.0.1:5502/index.html");
+  }
+    // swal("Good job!", "You clicked the button!", "success", {
+    //   button: "Aww yiss!",
+    // });

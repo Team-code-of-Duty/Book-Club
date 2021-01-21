@@ -13,59 +13,68 @@
 </head>
 
 <body>
-    <header> 
-        <img src="../logo.png" alt="" class="logo">
+    <header>
+        <a href="../index.html"><img src="../logo.png" alt="" class="logo"></a>
         <nav class="main-nav">
             <ul class="items-container">
-                <li class="list-item"><a href="" class="link-item">Categories</a></li>
-                <li class="list-item"><a href="" class="link-item">About Us</a></li>
+                <li class="list-item"><a href="../index.html" class="link-item" id="Home">Home</a></li>
+
+                <li class="list-item"><a href="../category/categories.html" class="link-item" id="imhere">Categories</a>
+                </li>
+                <li class="list-item"><a href="../about-us/about-us.html" class="link-item" id="aboutus">About Us</a>
+                </li>
             </ul>
         </nav>
-        <div id="rightSearc">
-            <form class="search">
-                <input type="text" placeholder="Search.." name="search2" class="input-search">
+
+        <!-- search bar container -->
+        <div id="search-container">
+            <form id="searchForm" class="search">
+                <input type="text" placeholder="Search.." name="search" class="input-search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
+        <!--  end of search bar container -->
     </header>
     <div class="parent">
         <main class="parent-container">
             <div class="details-container">
-                <img class="img"
-                    src="https://media-exp1.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2159024400&v=beta&t=CrP5Le1mWICRcaxIGNBuajHcHGFPuyNA5C8DI339lSk">
+
+                <img id="img1" class="img" src="https://media-exp1.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2159024400&v=beta&t=CrP5Le1mWICRcaxIGNBuajHcHGFPuyNA5C8DI339lSk">
+                <br>
+
                 <div class="book-info">
-                    <li class="infoItems">Book Title:</li>
-                    <li class="infoItems"> Author: </li>
-                    <li class="infoItems">Publisher: </li>
-                    <li class="infoItems"> Topic: </li>
-                    <li class="infoItmes"><span class="fa fa-star checked"></span>
+                    <li id="title" class="infoItems">Book Title:</li>
+                    <li id="Author" class="infoItems"> Author: </li>
+                    <li id="Publisher" class="infoItems">Publisher: </li>
+                    <li id="topics" class="infoItems"> Topic: </li>
+                    <li id="rate" class="infoItems"> Rate: </li>
+                    <!-- <li id="rate" class="infoItmes"><span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
                         <span class="fa fa-star"></span>
-                    </li>
+                    </li> -->
                 </div>
                 <br>
             </div>
-            <hr class="firstHr">
+            <br>
+            <!-- <hr class="firstHr"> -->
+            <br>
             <div class="description-container">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, iusto quia. Soluta perferendis,
-                    voluptates expedita illo quidem quo, odio non vero dolorum, molestias qui accusantium mollitia
-                    officia id. Optio, similique.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laborum repellat totam dicta, ipsa a
-                    quam quibusdam error odio beatae maiores expedita perferendis sit? Molestiae eos enim optio
-                    assumenda eaque?
+                <p id="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, iusto quia. Soluta perferendis, voluptates expedita illo quidem quo, odio non vero dolorum, molestias qui accusantium mollitia officia id. Optio, similique. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Rerum laborum repellat totam dicta, ipsa a quam quibusdam error odio beatae maiores expedita perferendis sit? Molestiae eos enim optio assumenda eaque?
                 </p>
                 <br>
-                <a class="download" href=""
-                    download="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg"> Download</a>
+                <a id="down" class="download" href=""> Download</a>
+
+                <!-- <button id="myButton" class="download" >Download</button> -->
+
             </div>
         </main>
         <div class="parent-container2">
-            
             <div class="book-form">
-                <form id="book-comment">
+                <form id="bookComment">
                     <fieldset>
                         <legend>Book Review</legend>
                         <div id="comments">
@@ -79,6 +88,22 @@
                         <input type="submit" value="post" class="post-button">
                     </fieldset>
                 </form>
+
+            </div>
+            <div class="center">
+                <div class="stars">
+                    <input type="radio" id="five" name="rate" value="5">
+                    <label for="five"></label>
+                    <input type="radio" id="four" name="rate" value="4">
+                    <label for="four"></label>
+                    <input type="radio" id="three" name="rate" value="3">
+                    <label for="three"></label>
+                    <input type="radio" id="two" name="rate" value="2">
+                    <label for="two"></label>
+                    <input type="radio" id="one" name="rate" value="1">
+                    <label for="one"></label>
+                    <span class="result"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -87,36 +112,46 @@
         <div class="main-footer">
             <div class="contactUs-container">
                 <h1 class="contact-h1">Contact Us</h1>
-              
+
                 <h4 class="contact-info"> Phone: 00962798136658</h4>
                 <a href="mailto:bookarina@info.com" class="contact-info">Email: bookarin@info.com</a>
                 <ul class="social-Media-Contaier">
-                    <li class="Sm-icon"><a href="#" class="fa fa-facebook"></a></li>
-                    <li class="Sm-icon"><a href="#" class="fa fa-twitter"></a></li>
-                    <li class="Sm-icon"><a href="#" class="fa fa-instagram"></a></li>
+                    <li class="Sm-icon">
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li class="Sm-icon">
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li class="Sm-icon">
+                        <a href="#" class="fa fa-instagram"></a>
+                    </li>
                 </ul>
             </div>
             <div class="about-Us">
                 <h1>About Us</h1>
                 <br>
-               <a href="#" class="link-meet-team"> Meet The Team </a>
+                <a href="#" class="link-meet-team"> Meet The Team </a>
             </div>
             <div class="rate-Us">
-               
+
                 <h1>Rate Us</h1>
                 <br>
                 <a href="../form/form.html" class="feedbackForm">Feedback form </a>
             </div>
-            <div class="Terms-pollicies">
-                <h1>Terms & Policies</h1>
-                <br>
-                <a href="../about-us/Terms.html" class="tearms">Terms of Use</a>
-                <br>
-                <a href="../about-us/policy.html" class="tearms">Privacy policy</a>
-            </div>
         </div>
-        
+        <div class="Terms-pollicies">
+            <h1>Terms & Policies</h1>
+            <br>
+            <a href="../about-us/Terms.html" class="tearms">Terms of Use</a>
+            <br>
+            <a href="../about-us/policy.html" class="tearms">Privacy policy</a>
+        </div>
+
+
     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="../category/single.js"></script>
 </body>
 
 </html>

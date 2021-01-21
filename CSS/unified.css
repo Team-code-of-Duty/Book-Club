@@ -23,7 +23,7 @@ font-family: "Tiempos";
 background-image: url(https://wallpaperaccess.com/full/3876048.jpg);
 background-repeat: no-repeat;
 background-size: cover ;
-}
+background-attachment: fixed;}
 /* background: url(https://wallpaperaccess.com/full/3876048.jpg) 0 0 no-repeat / cover; */
     
 
@@ -84,6 +84,7 @@ font-weight: bolder;
 font-family:"penna";
 color: white;
 text-decoration: none;
+
 }
 /*******************************************************************
 *
@@ -184,4 +185,9 @@ font-size: 20px;
 color:white
 }
 h1 > *{font-size: 15px;
+}
+
+.imhere{
+
+    color:red;
 }
